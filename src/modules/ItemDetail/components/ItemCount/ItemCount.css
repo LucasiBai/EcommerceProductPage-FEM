@@ -1,0 +1,20 @@
+.item-count__box button {
+	color: hsl(26, 100%, 55%);
+	background: none;
+	border: none;
+	font-weight: bold;
+	padding: 1.2rem 1.5rem;
+}
+
+.item-count__box {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	max-width: 500px;
+	width: 100%;
+	background-color: hsl(223, 64%, 98%);
+	border-radius: 7px;
+}
+.item-count__box span {
+	font-weight: 700;
+}

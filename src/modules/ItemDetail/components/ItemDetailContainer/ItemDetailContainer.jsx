@@ -12,9 +12,10 @@ const item = {
 	brand: "Sneaker Company",
 	title: "Fall Limited Edition Sneakers",
 	description:
-		"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+		"These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everithing the weather can offer.",
 	price: 250,
 	discount: 50,
+	stock: 10,
 };
 
 const ItemDetailContainer = () => {
