@@ -1,0 +1,5 @@
+@media only screen and (max-width: 768px) {
+	.item-description__box {
+		margin: 1.8rem;
+	}
+}

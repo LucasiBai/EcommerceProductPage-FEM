@@ -1,0 +1,24 @@
+@media only screen and (max-width: 768px) {
+	.img-slider__box {
+		position: relative;
+		display: flex;
+		align-items: center;
+	}
+	.img-slider__box img {
+		width: 100%;
+		height: 350px;
+		object-fit: cover;
+	}
+
+	/* Buttons */
+	.img-slider__box .left,
+	.img-slider__box .right {
+		position: absolute;
+	}
+	.img-slider__box .left {
+		left: 1rem;
+	}
+	.img-slider__box .right {
+		right: 1rem;
+	}
+}

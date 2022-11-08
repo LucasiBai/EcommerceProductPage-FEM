@@ -1,6 +1,6 @@
 import React from "react";
 
-import ItemDetailContainer from "./modules/ItemDetail/ItemDetailContainer/ItemDetailContainer";
+import ItemDetailContainer from "./modules/ItemDetail/components/ItemDetailContainer/ItemDetailContainer";
 
 import "./App.css";
 
