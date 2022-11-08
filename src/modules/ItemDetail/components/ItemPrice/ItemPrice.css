@@ -1,0 +1,35 @@
+.item-price__box {
+	margin: 1rem 0;
+}
+
+.item-price__box,
+.item-price__box span {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.item-price__box span {
+	width: auto;
+}
+
+.item-price__box span h5 {
+	font-size: 30px;
+	font-weight: 700;
+	margin-right: 0.5rem;
+}
+
+.item-price__box h6 {
+	font-size: 16px;
+	font-weight: 700;
+	color: rgba(0, 0, 0, 0.3);
+	text-decoration: line-through;
+}
+
+.item-price__box span h6 {
+	text-decoration: none;
+	color: hsl(26, 100%, 55%);
+	background-color: hsl(25, 100%, 94%);
+	border-radius: 5px;
+	padding: 2px 7px;
+}

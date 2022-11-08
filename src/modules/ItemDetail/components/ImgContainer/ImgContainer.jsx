@@ -21,7 +21,7 @@ const ImgContainer = ({ images }) => {
 	};
 
 	return (
-		<div className="img-slider__box">
+		<div className="img-slider__box" onClick={() => handleChangeImg("right")}>
 			<ArrowButton
 				direction={"left"}
 				className="left"

@@ -1,20 +1,14 @@
 .arrow-button {
 	border: 0;
 	border-radius: 100%;
-	padding: 0.5rem 0.85rem;
+	padding: 0.6rem 0.9rem;
 	font-size: 20px;
 	box-shadow: 0 0 4px rgba(0, 0, 0, 0.301);
-	display: none;
+	display: inline;
 	font-weight: bold;
 }
 
 .arrow-button:hover {
 	background-color: rgb(223, 223, 223);
 	transition: background-color ease 0.2s;
-}
-
-@media only screen and (max-width: 768px) {
-	.arrow-button {
-		display: inline;
-	}
 }
