@@ -1,0 +1,10 @@
+nav,
+nav span {
+	display: flex;
+	align-items: center;
+}
+
+nav {
+	justify-content: space-between;
+	padding: 1.6rem;
+}

@@ -2,7 +2,7 @@ import { useState, useContext } from "react";
 
 import CartContext from "../../../../contexts/CartContext";
 
-import Button from "../../../Buttons/components/ArrowButton/Button/Button";
+import Button from "../../../Buttons/components/Button/Button";
 
 import ItemCount from "../ItemCount/ItemCount";
 import ItemPrice from "../ItemPrice/ItemPrice";
@@ -46,8 +46,8 @@ const ItemDescription = ({ item }) => {
 				initial={0}
 				handleButtonFunction={setCount}
 			/>
-			<Button title={"Add to cart"} margin={"1rem 0"} onClick={handleAddToCart}>
-				<CartIcon />
+			<Button margin={"1rem 0"} onClick={handleAddToCart}>
+				<CartIcon /> {"Add to cart"}
 			</Button>
 		</div>
 	);
