@@ -16,7 +16,7 @@ const ItemCount = ({ stock, initial, handleButtonFunction }) => {
 				? counter - 1
 				: null;
 
-		if (newCount) {
+		if (newCount || newCount === 0) {
 			setCounter(newCount);
 			handleButtonFunction(newCount);
 		}

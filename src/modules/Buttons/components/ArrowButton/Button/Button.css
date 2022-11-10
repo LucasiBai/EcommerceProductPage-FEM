@@ -1,0 +1,20 @@
+.generic-button {
+	color: hsl(0, 0%, 100%);
+	background-color: hsl(26, 100%, 55%);
+	border: none;
+	border-radius: 7px;
+	padding: 1rem;
+	max-width: 500px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: 700;
+	font-size: 14px;
+}
+
+.generic-button:hover {
+	box-shadow: 0 0 5px hsl(25, 100%, 94%);
+	background-color: hsl(26, 79%, 50%);
+	transition: background-color ease 0.2s;
+}
