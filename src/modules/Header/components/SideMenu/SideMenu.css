@@ -1,0 +1,41 @@
+.side-menu__box {
+	display: block;
+	position: fixed;
+	background-color: none;
+	width: 100vw;
+	height: 100vh;
+	top: 0vh;
+	left: 0vh;
+	z-index: 5;
+	pointer-events: none;
+	transition: background-color 0.5s ease;
+}
+
+.side-menu__card {
+	display: block;
+	position: fixed;
+	padding: 1.5rem;
+	background-color: white;
+	width: 50vw;
+	height: 100vh;
+	top: 0vh;
+	left: -100vh;
+	z-index: 10;
+	transition: left 0.5s ease;
+}
+
+.side-menu__card ul {
+	display: flex;
+	flex-direction: column;
+	gap: 1.2rem;
+}
+
+.side-menu__card li a {
+	font-weight: 700;
+	color: #000;
+	text-shadow: 1px 1px 1px rgb(226, 226, 226);
+}
+
+.side-menu__card li a :hover {
+	color: rgba(0, 0, 0, 0.75);
+}

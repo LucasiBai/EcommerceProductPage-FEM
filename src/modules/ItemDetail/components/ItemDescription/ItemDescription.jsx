@@ -22,15 +22,13 @@ const CartIcon = () => (
 const ItemDescription = ({ item }) => {
 	const [count, setCount] = useState(0);
 
-	const { addItem, getCartProducts } = useContext(CartContext);
+	const { addItem } = useContext(CartContext);
 
 	const handleAddToCart = () => {
 		if (count) {
 			addItem(item, count);
 		}
 	};
-
-	console.log(getCartProducts());
 
 	return (
 		<div className="item-description__box">

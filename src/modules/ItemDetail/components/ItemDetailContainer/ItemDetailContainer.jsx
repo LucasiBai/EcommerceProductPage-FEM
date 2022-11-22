@@ -2,10 +2,10 @@ import ImgContainer from "../ImgContainer/ImgContainer";
 import ItemDescription from "../ItemDescription/ItemDescription";
 
 const images = [
-	{ url: "./images/image-product-1.jpg", alt: "sneackers" },
-	{ url: "./images/image-product-2.jpg", alt: "sneackers" },
-	{ url: "./images/image-product-3.jpg", alt: "sneackers" },
-	{ url: "./images/image-product-4.jpg", alt: "sneackers" },
+	{ url: "../../images/image-product-1.jpg", alt: "sneackers" },
+	{ url: "../../images/image-product-2.jpg", alt: "sneackers" },
+	{ url: "../../images/image-product-3.jpg", alt: "sneackers" },
+	{ url: "../../images/image-product-4.jpg", alt: "sneackers" },
 ];
 
 const item = {

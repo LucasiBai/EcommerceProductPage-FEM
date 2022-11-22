@@ -1,16 +1,23 @@
 import React from "react";
 
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 import { CartContextProvider } from "./contexts/CartContext";
+
 import ItemDetailContainer from "./modules/ItemDetail/components/ItemDetailContainer/ItemDetailContainer";
+import HeaderContainer from "./modules/Header/container/HeaderContainer/HeaderContainer";
 
 import "./App.css";
-import HeaderContainer from "./modules/Header/components/HeaderContainer/HeaderContainer";
 
 function App() {
 	return (
 		<CartContextProvider>
-			<HeaderContainer />
-			<ItemDetailContainer />
+			<BrowserRouter>
+				<HeaderContainer />
+				<Routes>
+					<Route path="/items/:itemId" element={<ItemDetailContainer />} />
+				</Routes>
+			</BrowserRouter>
 		</CartContextProvider>
 	);
 }
