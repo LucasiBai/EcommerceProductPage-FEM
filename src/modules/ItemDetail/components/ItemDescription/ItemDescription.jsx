@@ -45,7 +45,9 @@ const ItemDescription = ({ item }) => {
 				handleButtonFunction={setCount}
 			/>
 			<Button margin={"1rem 0"} onClick={handleAddToCart}>
-				<CartIcon /> {"Add to cart"}
+				<div style={{ display: "flex", gap: "1rem", alignItems: "center" }}>
+					<CartIcon /> {"Add to cart"}
+				</div>
 			</Button>
 		</div>
 	);

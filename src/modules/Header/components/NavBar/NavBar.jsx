@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import CartWidget from "../CartWidget/CartWidget";
 import SideMenu from "../SideMenu/SideMenu";
 import UserStatus from "../UserStatus/UserStatus";
@@ -19,7 +20,9 @@ const NavBar = () => {
 		<nav>
 			<span>
 				<SideMenu />
-				<LogoIcon />
+				<Link to="/">
+					<LogoIcon />
+				</Link>
 			</span>
 			<span>
 				<CartWidget />

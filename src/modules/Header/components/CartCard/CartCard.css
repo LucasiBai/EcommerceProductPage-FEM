@@ -1,0 +1,34 @@
+.cart-card__box {
+	background-color: white;
+	border-radius: 7px;
+	max-width: 96vw;
+	width: 100%;
+	margin: 5.2rem 0;
+	box-shadow: 0 0 5px rgba(156, 155, 155, 0.5);
+}
+
+.cart-card__box h4 {
+	padding: 1.5rem 1.5rem;
+	font-weight: 700;
+	font-size: 16px;
+}
+
+.cart-card__box div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-height: 180px;
+}
+
+.cart-card__box h5 {
+	color: rgba(0, 0, 0, 0.747);
+	font-weight: 700;
+	font-size: 16px;
+}
+
+.cart-card__box hr {
+	height: 2.5px;
+	background-color: #ececec;
+	border: none;
+}

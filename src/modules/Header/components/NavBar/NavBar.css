@@ -1,7 +1,7 @@
 nav,
 nav span {
 	display: flex;
-	align-items: flex-end;
+	align-items: center;
 	gap: 1rem;
 }
 

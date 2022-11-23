@@ -1,0 +1,10 @@
+.cart-counter__box h6 {
+	position: absolute;
+	top: -6px;
+	right: -6px;
+	background-color: hsl(26, 100%, 55%);
+	padding: 1px 7px;
+	color: white;
+	font-size: 9px;
+	border-radius: 9px;
+}

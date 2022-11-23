@@ -16,9 +16,10 @@ const SideMenu = () => {
 			<div
 				className="side-menu__box"
 				style={{
-					left: isOpen && "0vh",
 					backgroundColor: isOpen && "rgba(0, 0, 0, 0.555)",
+					pointerEvents: isOpen && "all",
 				}}
+				onClick={() => setIsOpen(false)}
 			/>
 			<div
 				className="side-menu__card"
