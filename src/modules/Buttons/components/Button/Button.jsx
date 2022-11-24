@@ -9,6 +9,7 @@ const Button = ({
 	padding,
 	width,
 	textColor,
+	style,
 }) => {
 	return (
 		<button
@@ -19,6 +20,7 @@ const Button = ({
 				margin: margin && margin,
 				padding: padding && padding,
 				width: width && width,
+				...style,
 			}}
 			onClick={onClick}
 		>

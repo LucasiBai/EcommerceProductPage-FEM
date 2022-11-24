@@ -5,6 +5,8 @@
 	width: 100%;
 	margin: 5.2rem 0;
 	box-shadow: 0 0 5px rgba(156, 155, 155, 0.5);
+	position: absolute;
+	z-index: 15;
 }
 
 .cart-card__box h4 {

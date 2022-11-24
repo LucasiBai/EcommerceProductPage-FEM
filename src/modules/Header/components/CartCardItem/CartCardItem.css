@@ -1,5 +1,40 @@
+.cart-card-item__box {
+	height: 93px;
+}
+
 .cart-card-item__box img {
-	width: 10px;
-	height: 10px;
+	width: 54px;
+	height: 54px;
 	object-fit: cover;
+	border-radius: 6px;
+}
+
+.cart-card-item__box h6 {
+	margin: 0px;
+	padding: 0;
+	max-width: 177px;
+	width: 100%;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	font-weight: 100;
+	font-size: 16px;
+	color: rgba(0, 0, 0, 0.5);
+}
+
+.cart-card-item__box div {
+	width: 200px;
+	display: flex;
+	flex-direction: column;
+	gap: 0.4rem;
+}
+
+.cart-card-item__price {
+	display: flex;
+	gap: 7px;
+}
+
+.cart-card-item__price span {
+	font-weight: 700;
+	color: black;
 }
