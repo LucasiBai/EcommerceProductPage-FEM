@@ -10,7 +10,7 @@ const SideMenu = () => {
 	const [isOpen, setIsOpen] = useState(false);
 
 	return (
-		<React.Fragment>
+		<div className="side-menu-button">
 			<BurgerButton onClick={() => setIsOpen(true)} />
 
 			<div
@@ -46,7 +46,7 @@ const SideMenu = () => {
 					</li>
 				</ul>
 			</div>
-		</React.Fragment>
+		</div>
 	);
 };
 

@@ -26,7 +26,11 @@ const CartCard = () => {
 								</li>
 							))}
 						</ul>
-						<Button title={"Checkout"} width={"88%"} />
+						<Button
+							title={"Checkout"}
+							width={"88%"}
+							margin={"0.5rem 0 1.5rem"}
+						/>
 					</React.Fragment>
 				)}
 			</div>

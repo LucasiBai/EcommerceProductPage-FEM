@@ -1,0 +1,15 @@
+.nav-bar-links {
+	display: none;
+}
+
+@media only screen and (min-width: 576px) {
+	.nav-bar-links {
+		display: flex;
+		gap: 2rem;
+	}
+	.nav-bar-links a {
+		font-size: 16;
+		color: rgba(0, 0, 0, 0.5);
+		font-weight: 700;
+	}
+}

@@ -21,6 +21,8 @@
 	align-items: center;
 	justify-content: center;
 	min-height: 180px;
+	max-height: 360px;
+	overflow-y: scroll;
 }
 
 .cart-card__box h5 {
@@ -30,7 +32,7 @@
 }
 
 .cart-card__box hr {
-	height: 2.5px;
+	height: 2px;
 	background-color: #ececec;
 	border: none;
 }

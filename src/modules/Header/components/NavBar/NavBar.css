@@ -5,7 +5,21 @@ nav span {
 	gap: 1rem;
 }
 
+nav .nav-user-menu {
+	gap: 1.5rem;
+}
+
 nav {
 	justify-content: space-between;
-	padding: 1.6rem;
+	padding: 1.5rem;
+}
+
+@media only screen and (min-width: 576px) {
+	.nav-bar-brand {
+		margin-right: 2.5rem;
+	}
+	nav {
+		max-width: 1200px;
+		width: 100%;
+	}
 }
