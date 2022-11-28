@@ -38,3 +38,9 @@
 	font-weight: 700;
 	color: black;
 }
+
+@media only screen and (min-width: 576px) {
+	.cart-card-item__box h6 {
+		max-width: 200px;
+	}
+}

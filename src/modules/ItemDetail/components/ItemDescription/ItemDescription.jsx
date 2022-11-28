@@ -39,16 +39,18 @@ const ItemDescription = ({ item }) => {
 				price={count ? count * item.price : item.price}
 				discount={item.discount}
 			/>
-			<ItemCount
-				stock={item.stock}
-				initial={0}
-				handleButtonFunction={setCount}
-			/>
-			<Button margin={"1rem 0"} onClick={handleAddToCart}>
-				<div style={{ display: "flex", gap: "1rem", alignItems: "center" }}>
-					<CartIcon /> {"Add to cart"}
-				</div>
-			</Button>
+			<div className="item-description__interactive-buttons">
+				<ItemCount
+					stock={item.stock}
+					initial={0}
+					handleButtonFunction={setCount}
+				/>
+				<Button margin={"1rem 0"} onClick={handleAddToCart} shadow>
+					<div style={{ display: "flex", gap: "1rem", alignItems: "center" }}>
+						<CartIcon /> {"Add to cart"}
+					</div>
+				</Button>
+			</div>
 		</div>
 	);
 };

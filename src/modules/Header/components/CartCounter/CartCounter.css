@@ -8,3 +8,6 @@
 	font-size: 9px;
 	border-radius: 9px;
 }
+.cart-counter__box:hover {
+	cursor: pointer;
+}

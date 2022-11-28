@@ -1,6 +1,8 @@
 import ImgContainer from "../ImgContainer/ImgContainer";
 import ItemDescription from "../ItemDescription/ItemDescription";
 
+import "./ItemDetailContainer.css";
+
 const images = [
 	{ url: "../../images/image-product-1.jpg", alt: "sneackers" },
 	{ url: "../../images/image-product-2.jpg", alt: "sneackers" },

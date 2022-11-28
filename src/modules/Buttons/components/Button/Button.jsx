@@ -10,6 +10,7 @@ const Button = ({
 	width,
 	textColor,
 	style,
+	shadow,
 }) => {
 	return (
 		<button
@@ -20,6 +21,7 @@ const Button = ({
 				margin: margin && margin,
 				padding: padding && padding,
 				width: width && width,
+				boxShadow: shadow && "0px 26px 25px hsl(26deg 100% 55% / 20%)",
 				...style,
 			}}
 			onClick={onClick}

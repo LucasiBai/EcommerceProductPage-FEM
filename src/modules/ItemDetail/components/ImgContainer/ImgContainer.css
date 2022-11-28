@@ -27,4 +27,13 @@
 	.img-slider__box .right {
 		display: none;
 	}
+	.img-slider__box {
+		justify-content: center;
+		padding: 5rem 0;
+	}
+	.img-slider__box img {
+		height: 420px;
+		width: 400px;
+		border-radius: 14px;
+	}
 }

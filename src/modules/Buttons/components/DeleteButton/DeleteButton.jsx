@@ -22,7 +22,7 @@ const DeleteButton = ({
 			padding={padding ? padding : "5px"}
 			textColor={textColor ? textColor : "#C3CAD9"}
 			width={24}
-			style={{ fontSize: 16 }}
+			style={{ fontSize: 16, boxShadow: "none" }}
 		>
 			<FontAwesomeIcon icon={faTrashCan} />
 		</Button>

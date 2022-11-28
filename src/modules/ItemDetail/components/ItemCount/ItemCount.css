@@ -6,6 +6,11 @@
 	padding: 1.2rem 1.5rem;
 }
 
+.item-count__box button:hover {
+	cursor: pointer;
+	color: hsl(26deg 100% 72%);
+}
+
 .item-count__box {
 	display: flex;
 	align-items: center;
@@ -17,4 +22,10 @@
 }
 .item-count__box span {
 	font-weight: 700;
+}
+@media only screen and (min-width: 576px) {
+	.item-count__box {
+		max-height: 3.25rem;
+		height: 100%;
+	}
 }

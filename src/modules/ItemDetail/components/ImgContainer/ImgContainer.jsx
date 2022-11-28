@@ -21,7 +21,7 @@ const ImgContainer = ({ images }) => {
 	};
 
 	return (
-		<div className="img-slider__box" onClick={() => handleChangeImg("right")}>
+		<div className="img-slider__box">
 			<ArrowButton
 				direction={"left"}
 				className="left"
@@ -32,7 +32,12 @@ const ImgContainer = ({ images }) => {
 				className="right"
 				handleOnClick={() => handleChangeImg("right")}
 			/>
-			<img className="img-slider" src={currentImg.url} alt={currentImg.alt} />
+			<img
+				className="img-slider"
+				src={currentImg.url}
+				alt={currentImg.alt}
+				onClick={() => handleChangeImg("right")}
+			/>
 		</div>
 	);
 };

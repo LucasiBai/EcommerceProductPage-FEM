@@ -18,8 +18,11 @@ nav {
 	.nav-bar-brand {
 		margin-right: 2.5rem;
 	}
+	nav .nav-user-menu {
+		gap: 2.8rem;
+	}
 	nav {
 		max-width: 1200px;
-		width: 100%;
+		width: 95%;
 	}
 }

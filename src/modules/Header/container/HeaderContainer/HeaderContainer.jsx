@@ -6,6 +6,7 @@ const HeaderContainer = () => {
 	return (
 		<header>
 			<NavBar />
+			<hr />
 		</header>
 	);
 };

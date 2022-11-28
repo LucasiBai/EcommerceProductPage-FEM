@@ -33,3 +33,11 @@
 	border-radius: 5px;
 	padding: 2px 7px;
 }
+
+@media only screen and (min-width: 576px) {
+	.item-price__box {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 0.5rem;
+	}
+}
