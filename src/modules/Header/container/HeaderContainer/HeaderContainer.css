@@ -11,9 +11,9 @@ header hr {
 	}
 	header hr {
 		display: block;
-		max-width: 1200px;
+		max-width: 1150px;
 		width: 95%;
-		height: 2px;
+		height: 1px;
 		background-color: #ececec;
 		border: none;
 	}

@@ -1,4 +1,4 @@
-.cart-counter__box h6 {
+.cart-counter__box .item-counter {
 	position: absolute;
 	top: -6px;
 	right: -6px;

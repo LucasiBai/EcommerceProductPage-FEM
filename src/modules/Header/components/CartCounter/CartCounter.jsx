@@ -14,17 +14,24 @@ const CartIcon = () => (
 	</svg>
 );
 
-const CartCounter = ({ onClick }) => {
+const CartCounter = ({ onClick, children }) => {
 	const { getCartCount } = useContext(CartContext);
 
 	return (
 		<span
 			className="cart-counter__box"
-			onClick={onClick}
-			style={{ position: "relative" }}
+			style={{
+				position: "relative",
+			}}
 		>
-			{getCartCount() !== 0 && <h6>{getCartCount()}</h6>}
-			<CartIcon />
+			<span onClick={onClick}>
+				{getCartCount() !== 0 && (
+					<h6 className="item-counter">{getCartCount()}</h6>
+				)}
+				<CartIcon />
+			</span>
+
+			{children}
 		</span>
 	);
 };

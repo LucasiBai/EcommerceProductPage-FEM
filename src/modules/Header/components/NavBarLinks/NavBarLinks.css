@@ -12,4 +12,14 @@
 		color: rgba(0, 0, 0, 0.5);
 		font-weight: 700;
 	}
+	.nav-bar-links li {
+		position: relative;
+	}
+	.nav-bar-links .nav-bar-links__hover {
+		position: absolute;
+		background-color: hsl(26, 100%, 55%);
+		width: 100%;
+		top: 55px;
+		height: 5px;
+	}
 }

@@ -38,6 +38,11 @@ const ImgContainer = ({ images }) => {
 				alt={currentImg.alt}
 				onClick={() => handleChangeImg("right")}
 			/>
+			<div className="img-slider__previews">
+				{images.map((image) => (
+					<img src={image.url} alt={image.alt} />
+				))}
+			</div>
 		</div>
 	);
 };
