@@ -1,0 +1,23 @@
+@media only screen and (min-width: 768px) {
+	.img-selector-item {
+		border-radius: 10px;
+		cursor: pointer;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background: none;
+		border: none;
+		overflow: hidden;
+		position: relative;
+	}
+	.img-selector-item__img {
+		width: 80px;
+		height: 80px;
+		object-fit: cover;
+		border-radius: 8px;
+	}
+	.img-selector-item__img:hover {
+		filter: opacity(0.45);
+		transition: filter ease 0.4s;
+	}
+}

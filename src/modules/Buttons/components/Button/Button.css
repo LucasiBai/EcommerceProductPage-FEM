@@ -16,6 +16,6 @@
 .generic-button:hover {
 	box-shadow: 0 0 5px hsl(25, 100%, 94%);
 	background-color: hsl(26deg 100% 72%);
-	transition: background-color ease 0.2s;
+	transition: background-color ease 0.4s;
 	cursor: pointer;
 }

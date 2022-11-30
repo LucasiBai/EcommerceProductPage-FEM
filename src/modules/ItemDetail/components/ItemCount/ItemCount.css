@@ -22,6 +22,7 @@
 }
 .item-count__box span {
 	font-weight: 700;
+	user-select: none;
 }
 @media only screen and (min-width: 576px) {
 	.item-count__box {
