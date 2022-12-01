@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 import ArrowButton from "../../../Buttons/components/ArrowButton/ArrowButton";
+import ImgPreview from "../ImgPreview/ImgPreview";
 import ImgSelector from "../ImgSelector/ImgSelector";
 
 import "./ImgContainer.css";
@@ -9,6 +10,7 @@ const ImgContainer = ({ images }) => {
 	const firstImages = images.slice(0, 4);
 
 	const [showPreview, setShowPreview] = useState(false);
+
 	const [currentIdx, setCurrentIdx] = useState(0);
 	const [currentImg, setCurrentImg] = useState(images[currentIdx]);
 
@@ -29,6 +31,13 @@ const ImgContainer = ({ images }) => {
 
 	return (
 		<div className="img-slider__box">
+			{showPreview && (
+				<ImgPreview
+					images={images}
+					handleClosePreview={() => setShowPreview(false)}
+					handleCurrentIdx={currentIdx}
+				/>
+			)}
 			<ArrowButton
 				direction={"left"}
 				className="left"
@@ -43,13 +52,18 @@ const ImgContainer = ({ images }) => {
 				className="img-slider img-slider__main"
 				src={currentImg.url}
 				alt={currentImg.alt}
-				onClick={() => handleChangeImg("right")}
+				onClick={() => {
+					window.innerWidth >= 576
+						? setShowPreview(true)
+						: handleChangeImg("right");
+				}}
 			/>
 
 			<ImgSelector
 				images={firstImages}
 				currentIdx={currentIdx}
 				handleSetImage={handleSetImage}
+				handleOpenPreview={() => setShowPreview(true)}
 				length={images.length}
 			/>
 		</div>
