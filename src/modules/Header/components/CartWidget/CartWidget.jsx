@@ -10,20 +10,28 @@ const CartWidget = () => {
 	const [isOpen, setIsOpen] = useState(false);
 
 	return (
-		<CartCounter handlePointerEvents={!isOpen} onClick={() => setIsOpen(true)}>
-			<div className="cart-menu__card" style={{ top: isOpen && "0vh" }}>
-				<div
-					style={{
-						top: isOpen && "0vh",
-						pointerEvents: isOpen && "all",
-						height: "100vh",
-						width: "100vw",
-					}}
-					onClick={() => setIsOpen(false)}
-				/>
-				<CartCard />
-			</div>
-		</CartCounter>
+		<React.Fragment>
+			<CartCounter
+				handlePointerEvents={!isOpen}
+				onClick={() => setIsOpen(true)}
+			>
+				<div className="cart-menu__card" style={{ top: isOpen && "0vh" }}>
+					<CartCard />
+				</div>
+			</CartCounter>
+			<div
+				className="cart-menu__background"
+				style={{
+					top: isOpen ? "0vh" : "-150vh",
+					right: "0vw",
+					pointerEvents: isOpen && "all",
+					height: "100vh",
+					width: "100vw",
+					position: "fixed",
+				}}
+				onClick={() => setIsOpen(false)}
+			/>
+		</React.Fragment>
 	);
 };
 

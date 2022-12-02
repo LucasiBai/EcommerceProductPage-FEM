@@ -1,16 +1,14 @@
 import React, { useState } from "react";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faXmark } from "@fortawesome/free-solid-svg-icons";
+
 import ArrowButton from "../../../Buttons/components/ArrowButton/ArrowButton";
 import ImgSelector from "../ImgSelector/ImgSelector";
 
 import "./ImgPreview.css";
 
 const ImgPreview = ({ images, handleCurrentIdx, handleClosePreview }) => {
-	// const reorderedImgs = [
-	// 	...images.slice(currentIdx),
-	// 	...images.slice(0, currentIdx),
-	// ];
-
 	const [currentIdx, setCurrentIdx] = useState(handleCurrentIdx);
 	const [currentImg, setCurrentImg] = useState(images[currentIdx]);
 
@@ -32,6 +30,9 @@ const ImgPreview = ({ images, handleCurrentIdx, handleClosePreview }) => {
 	return (
 		<div className="img-preview__box">
 			<div className="img-preview__interactive">
+				<button className="img-preview__close" onClick={handleClosePreview}>
+					<FontAwesomeIcon icon={faXmark} />
+				</button>
 				{images.length > 1 && (
 					<React.Fragment>
 						<ArrowButton

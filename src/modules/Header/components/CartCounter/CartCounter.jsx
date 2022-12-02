@@ -29,9 +29,8 @@ const CartCounter = ({ onClick, children }) => {
 					<h6 className="item-counter">{getCartCount()}</h6>
 				)}
 				<CartIcon />
+				{children}
 			</span>
-
-			{children}
 		</span>
 	);
 };

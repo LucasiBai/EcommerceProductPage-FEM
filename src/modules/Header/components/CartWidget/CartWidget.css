@@ -1,4 +1,5 @@
-.cart-menu__card {
+.cart-menu__card,
+.cart-menu__background {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -10,4 +11,28 @@
 	top: -150vh;
 	z-index: 10;
 	transition: top 0.5s ease;
+}
+
+@media only screen and (min-width: 576px) {
+	.cart-menu__card {
+		width: 400px;
+		right: -210px;
+		position: absolute;
+		top: -150vh;
+		z-index: 10;
+		transition: top 0.5s ease;
+	}
+
+	.cart-menu__background {
+		top: -150vh;
+		width: 100%;
+		height: 100vh;
+		right: 0;
+	}
+}
+
+@media only screen and (min-width: 576px) and (max-width: 1350px) {
+	.cart-menu__card {
+		right: -112px;
+	}
 }

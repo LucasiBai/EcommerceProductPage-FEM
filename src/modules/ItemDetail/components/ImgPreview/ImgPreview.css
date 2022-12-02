@@ -17,10 +17,26 @@
 		display: inline;
 	}
 	.img-preview__box .preview-left {
-		left: -18px;
+		left: -20px;
+		top: 237px;
 	}
 	.img-preview__box .preview-right {
-		right: -18px;
+		right: -20px;
+		top: 237px;
+	}
+	.img-preview__box .img-preview__close {
+		position: absolute;
+		z-index: 1;
+		right: 0;
+		top: -50px;
+		background: none;
+		border: none;
+		cursor: pointer;
+		color: #f6f9ff;
+		font-size: 28px;
+	}
+	.img-preview__box .img-preview__close:hover {
+		color: #ff7d1a;
 	}
 
 	.img-preview__box {
@@ -52,6 +68,5 @@
 		z-index: 10;
 		width: 100vw;
 		height: 100vh;
-		cursor: zoom-out;
 	}
 }

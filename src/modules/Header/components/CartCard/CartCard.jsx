@@ -14,7 +14,7 @@ const CartCard = () => {
 		<div className="cart-card__box">
 			<h4>Cart</h4>
 			<hr />
-			<div>
+			<div className="cart-card__items">
 				{getCartProducts().length === 0 ? (
 					<h5>Your cart is empty.</h5>
 				) : (
