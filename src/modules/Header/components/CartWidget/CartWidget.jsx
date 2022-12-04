@@ -15,7 +15,10 @@ const CartWidget = () => {
 				handlePointerEvents={!isOpen}
 				onClick={() => setIsOpen(true)}
 			>
-				<div className="cart-menu__card" style={{ top: isOpen && "0vh" }}>
+				<div
+					className="cart-menu__card"
+					style={{ top: isOpen && "0vh", zIndex: 15, cursor: "default" }}
+				>
 					<CartCard />
 				</div>
 			</CartCounter>

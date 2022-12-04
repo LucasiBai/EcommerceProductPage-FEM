@@ -7,11 +7,11 @@ import CartCardItem from "../CartCardItem/CartCardItem";
 
 import "./CartCard.css";
 
-const CartCard = () => {
+const CartCard = ({ className, ...rest }) => {
 	const { getCartProducts } = useContext(CartContext);
 
 	return (
-		<div className="cart-card__box">
+		<div className={`cart-card__box ${className}`} {...rest}>
 			<h4>Cart</h4>
 			<hr />
 			<div className="cart-card__items">
