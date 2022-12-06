@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus, faMinus } from "@fortawesome/free-solid-svg-icons";
@@ -21,6 +21,11 @@ const ItemCount = ({ stock, initial, handleButtonFunction }) => {
 			handleButtonFunction(newCount);
 		}
 	};
+
+	useEffect(() => {
+		setCounter(0);
+		handleButtonFunction(0);
+	}, [stock, handleButtonFunction]);
 
 	return (
 		<div className="item-count__box">

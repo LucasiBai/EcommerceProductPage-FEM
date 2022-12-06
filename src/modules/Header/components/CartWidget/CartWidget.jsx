@@ -17,7 +17,7 @@ const CartWidget = () => {
 			>
 				<div
 					className="cart-menu__card"
-					style={{ top: isOpen && "0vh", zIndex: 15, cursor: "default" }}
+					style={{ top: isOpen && "0vh", cursor: "default" }}
 				>
 					<CartCard />
 				</div>

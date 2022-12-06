@@ -22,7 +22,7 @@ const CartIcon = () => (
 const ItemDescription = ({ item }) => {
 	const [count, setCount] = useState(0);
 
-	const { addItem } = useContext(CartContext);
+	const { addItem, getItemCount } = useContext(CartContext);
 
 	const handleAddToCart = () => {
 		if (count) {
@@ -41,15 +41,17 @@ const ItemDescription = ({ item }) => {
 			/>
 			<div className="item-description__interactive-buttons">
 				<ItemCount
-					stock={item.stock}
+					stock={item.stock - getItemCount(item.id)}
 					initial={0}
 					handleButtonFunction={setCount}
 				/>
-				<Button margin={"1rem 0"} onClick={handleAddToCart} shadow>
-					<div style={{ display: "flex", gap: "1rem", alignItems: "center" }}>
-						<CartIcon /> {"Add to cart"}
-					</div>
-				</Button>
+				{getItemCount(item.id) !== item.stock && (
+					<Button margin={"1rem 0"} shadow onClick={handleAddToCart}>
+						<div style={{ display: "flex", gap: "1rem", alignItems: "center" }}>
+							<CartIcon /> {"Add to cart"}
+						</div>
+					</Button>
+				)}
 			</div>
 		</div>
 	);

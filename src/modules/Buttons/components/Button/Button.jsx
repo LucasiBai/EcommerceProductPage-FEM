@@ -11,6 +11,7 @@ const Button = ({
 	textColor,
 	style,
 	shadow,
+	...rest
 }) => {
 	return (
 		<button
@@ -24,6 +25,7 @@ const Button = ({
 				boxShadow: shadow && "0px 26px 25px hsl(26deg 100% 55% / 20%)",
 				...style,
 			}}
+			{...rest}
 			onClick={onClick}
 		>
 			{children}
