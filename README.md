@@ -6,11 +6,10 @@ This is a solution to the [E-commerce product page challenge on Frontend Mentor]
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
+  - [Screenshot](#solution-screenshot)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
 - [Author](#author)
 
 ## Overview
@@ -28,11 +27,18 @@ Users should be able to:
 
 ### Solution Screenshot
 
-![](./screenshot.jpg)
+#### Desktop View
+![screen2](https://user-images.githubusercontent.com/99888705/206203107-fe06bf9a-5141-42ce-af5b-b159e02d49a7.gif)
+
+#### Mobile View
+
+![screen3](https://user-images.githubusercontent.com/99888705/206205140-42924408-65b7-483d-b4b4-b7f36ad18567.gif)
+
+
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: https://fem-ecommerce.vercel.app/
 
 ## My process
 
@@ -45,11 +51,7 @@ Users should be able to:
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
 
-### What I learned
-
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Website - [LucasiBai](https://github.com/LucasiBai)
+- Frontend Mentor - [@LucasiBai](https://www.frontendmentor.io/profile/LucasiBai)
